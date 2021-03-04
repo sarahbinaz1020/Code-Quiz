@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Document</title>
+    
+
 </head>
 <body>
-    <div>
-        <h1>Quiz</h1>
+    <div class="container">
+        <!-- Start prompt here -->
+        <div class="text-center" id="start-prompt">
+            <h1 class="box1">Code Quiz</h1>
+            <p><strong>OBJECTIVE:</strong>
+            <br>
+            Answer each question in the quiz. 
+            <br>
+            For every wrong answer 5 seconds will be deducted from the timer. 
+            <br>
+            Finish before the timer reaches 0. 
+            <br>
+            Press start to begin!
+            </p>
+            <button id="startbtn">Start</button>
+        </div>
+        <div class="text-center hide" id="question-prompt">      
+            <h2 id="question-text"></h2>
+            <div id="options"></div>
     </div>
+<!-- Question Block -->
+<!-- Timer -->
+    <div class="hide" id="timer">100</div>
+    </div>
+    <script src="assets/main.js"></script>
 </body>
 </html>
