@@ -46,29 +46,29 @@ $startbtn.addEventListener("click", function(e){
         $btn.textContent = item;
         // append it to our options div
         $questionOptions.append($btn);
-    })
-    // display our timer
+        // display our timer
+        $timer.textContent = secondsLeft.text; 
     // start our timer
 
+       // a timer starts with 100 seconds
+       function setTime() {
+        // Sets interval in variable
+        var timerInterval = setInterval(function() {
+          secondsLeft--;
+        //   console.log countdown works
+          console.log(secondsLeft) 
+          $timer.textContent = secondsLeft.text;  
+      
+          if(secondsLeft === 0) {
+            // Stops execution of action at set interval
+            clearInterval(timerInterval);
+            }
+        }, 1000);
+    }
+        setTime();
+    })
 })
-        // a timer starts with 100 seconds
-    function setTime() {
-    // Sets interval in variable
-    var timerInterval = setInterval(function() {
-      secondsLeft--;
-    //   console.log countdown works
-      console.log(secondsLeft) 
-      $timer.textContent = secondsLeft.text;  
-  
-      if(secondsLeft === 0) {
-        // Stops execution of action at set interval
-        clearInterval(timerInterval);
-        }
-        
-    }, 1000);
-}
-
-  setTime();
+     
 
   var questions = [
   {
@@ -77,22 +77,22 @@ $startbtn.addEventListener("click", function(e){
       options: ["Answer1", "Answer2", "Correct answer here"],
   },
   {
-    text: "What is your name?",
+    text: "What is your name2?",
     correctAnswer: "Correct answer here",
     options: ["Answer1", "Answer2", "Correct answer here"],
 },
 {
-    text: "What is your name?",
+    text: "What is your name3?",
     correctAnswer: "Correct answer here",
     options: ["Answer1", "Answer2", "Correct answer here"],
 },
 {
-    text: "What is your name?",
+    text: "What is your name4?",
     correctAnswer: "Correct answer here",
     options: ["Answer1", "Answer2", "Correct answer here"],
 },
 {
-    text: "What is your name?",
+    text: "What is your name5?",
     correctAnswer: "Correct answer here",
     options: ["Answer1", "Answer2", "Correct answer here"],
 },
