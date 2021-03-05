@@ -32,9 +32,6 @@ h3 {
     font-size: 150%;
     background-color: rgb(181, 206, 242);
 }
-button {
-    font-size: 150%; 
-}
 
 #timer {
       position: fixed;
@@ -45,4 +42,8 @@ button {
 
 .hide {
     display: none;
+}
+
+#options {
+    font-size: 150%;
 }
